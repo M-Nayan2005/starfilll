@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "StarFill: Feedback Form Rater",
+  "version": "2.0.0",
+  "description": "Shows a one-click button on feedback forms with star ratings to fill them all at once. Reads the page locally. No data collected.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "exclude_matches": [
+        "*://*.amazon.com/*",
+        "*://*.amazon.in/*",
+        "*://*.amazon.co.uk/*",
+        "*://*.amazon.de/*",
+        "*://*.flipkart.com/*",
+        "*://*.ebay.com/*",
+        "*://*.walmart.com/*",
+        "*://*.yelp.com/*",
+        "*://*.tripadvisor.com/*",
+        "*://*.trustpilot.com/*",
+        "*://*.booking.com/*",
+        "*://*.imdb.com/*",
+        "*://*.goodreads.com/*",
+        "*://*.glassdoor.com/*",
+        "*://*.zomato.com/*",
+        "*://*.swiggy.com/*",
+        "*://*.justdial.com/*",
+        "*://*.play.google.com/*",
+        "*://*.apps.apple.com/*",
+        "*://*.chromewebstore.google.com/*",
+        "*://*.maps.google.com/*",
+        "*://*.google.com/maps/*",
+        "*://*.google.com/webstore/*",
+        "*://*.google.com/local/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
