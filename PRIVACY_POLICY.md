@@ -10,4 +10,4 @@ StarFill does not collect, store, transmit, sell, or share any data.
 - It never reads passwords, form text, or personal details, and it never submits a form for you.
 - Nothing is remembered between pages or visits (closing the button only lasts until you reload the page).
 
-Contact: <your-email@example.com>
+Contact: <muthanayan2005@gmail.com>
